@@ -1,17 +1,25 @@
+
 class Solution {
     public int maxSumDivThree(int[] nums) {
-        int sum=0;
-        for(int num:nums){
-            sum+=num;
+        int[] dp = {0, Integer.MIN_VALUE, Integer.MIN_VALUE};
+
+        for (int num : nums) {
+            int[] next = dp.clone();
+
+            for (int r = 0; r < 3; r++) {
+                if (dp[r] != Integer.MIN_VALUE) {
+                    int newSum = dp[r] + num;
+                    int newRemainder = newSum % 3;
+
+                    next[newRemainder] = Math.max(
+                        next[newRemainder], newSum
+                    );
+                }
+            }
+
+            dp = next;
         }
-        if(sum%3==0) return sum;
-        int rem=sum%3;
-        for(int i=0;i<nums.length;i++){
-           if(nums[i]%3==sum%3){
-            sum-=nums[i];
-            // break;
-           }
-        }
-        return sum;
+
+        return dp[0];
     }
 }
