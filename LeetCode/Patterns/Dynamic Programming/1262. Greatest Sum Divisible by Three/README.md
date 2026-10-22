@@ -1,6 +1,6 @@
 # 📝 1262. Greatest Sum Divisible by Three (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/greatest-sum-divisible-by-three)
+🔗 [Problem Link](https://leetcode.com/problems/greatest-sum-divisible-by-three/?utm_source=chatgpt.com)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 

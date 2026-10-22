@@ -9,7 +9,7 @@ class Solution {
         for(int i=0;i<nums.length;i++){
            if(nums[i]%3==sum%3){
             sum-=nums[i];
-            break;
+            // break;
            }
         }
         return sum;
