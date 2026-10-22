@@ -8,8 +8,8 @@
 Math, String, Recursion
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 9 ms
+- **Memory:** 42.9 MB
 
 ---
 
